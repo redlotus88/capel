@@ -1,4 +1,4 @@
-package com.c8n;
+package com.c8n.rsa;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.IOUtils;

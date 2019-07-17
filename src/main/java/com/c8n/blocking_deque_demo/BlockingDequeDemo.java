@@ -1,4 +1,4 @@
-package com.c8n;
+package com.c8n.blocking_deque_demo;
 
 import java.util.concurrent.*;
 import java.util.stream.IntStream;
