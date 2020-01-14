@@ -17,7 +17,7 @@ server:
   port: 0
 
 # 日志级别控制
-debug: true
+debug: false
 logging:
   level:
     com.newtouch.tpmp.jd.spec: DEBUG
