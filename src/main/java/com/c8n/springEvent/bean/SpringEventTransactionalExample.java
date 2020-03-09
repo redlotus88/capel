@@ -1,4 +1,4 @@
-package com.c8n.springEvent;
+package com.c8n.springEvent.bean;
 
 import lombok.Getter;
 import org.springframework.context.ApplicationEvent;

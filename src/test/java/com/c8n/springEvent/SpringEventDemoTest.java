@@ -1,6 +1,8 @@
 package com.c8n.springEvent;
 
 import com.c8n.ApplicationTest;
+import com.c8n.springEvent.bean.SpringEventExample;
+import com.c8n.springEvent.bean.SpringEventMethodExample;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -38,5 +40,12 @@ public class SpringEventDemoTest {
     @Test
     public void exampleTransactionalText() {
         springEventService.doAFailedTransaction();
+    }
+
+    @Test
+    public void testEventExecuteOrder() {
+        // Use @Order to change execution order.
+        SpringEventExample see = new SpringEventExample(this, "test1");
+        applicationContext.publishEvent(see);
     }
 }

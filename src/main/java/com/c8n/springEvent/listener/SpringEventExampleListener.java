@@ -1,17 +1,20 @@
-package com.c8n.springEvent;
+package com.c8n.springEvent.listener;
 
+import com.c8n.springEvent.bean.SpringEventExample;
+import com.c8n.springEvent.bean.SpringEventMethodExample;
+import com.c8n.springEvent.bean.SpringEventTransactionalExample;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.EventListener;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by dragon on 2020/1/21.
  */
 @Slf4j
 @Component
+@Order(2)
 public class SpringEventExampleListener implements ApplicationListener<SpringEventExample> {
 
     @Override
