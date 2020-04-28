@@ -1,6 +1,6 @@
-package com.c8n.springEvent.repository;
+package com.c8n.spring.springEvent.repository;
 
-import com.c8n.springEvent.bean.SpringEventBean;
+import com.c8n.spring.springEvent.bean.SpringEventBean;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

@@ -23,7 +23,6 @@ spring:
     timeout: 1000
     database: 0
 
-
 server:
   port: 10000
 

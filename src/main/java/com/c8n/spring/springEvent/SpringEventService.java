@@ -1,4 +1,4 @@
-package com.c8n.springEvent;
+package com.c8n.spring.springEvent;
 
 /**
  * Created by dragon on 2020/1/21.

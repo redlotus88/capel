@@ -1,8 +1,8 @@
-package com.c8n.springEvent;
+package com.c8n.spring.springEvent;
 
-import com.c8n.springEvent.bean.SpringEventBean;
-import com.c8n.springEvent.bean.SpringEventTransactionalExample;
-import com.c8n.springEvent.repository.SpringEventRepository;
+import com.c8n.spring.springEvent.bean.SpringEventBean;
+import com.c8n.spring.springEvent.bean.SpringEventTransactionalExample;
+import com.c8n.spring.springEvent.repository.SpringEventRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;

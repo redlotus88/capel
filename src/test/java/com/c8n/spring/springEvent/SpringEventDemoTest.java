@@ -1,8 +1,8 @@
-package com.c8n.springEvent;
+package com.c8n.spring.springEvent;
 
 import com.c8n.ApplicationTest;
-import com.c8n.springEvent.bean.SpringEventExample;
-import com.c8n.springEvent.bean.SpringEventMethodExample;
+import com.c8n.spring.springEvent.bean.SpringEventExample;
+import com.c8n.spring.springEvent.bean.SpringEventMethodExample;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

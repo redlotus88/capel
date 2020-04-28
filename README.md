@@ -29,8 +29,11 @@ RabbitMQ相关测试示例
 ### Package rsa
 RSA算法描述
 
-### Package springEvent
+### Package spring.springEvent
 Spring Event的实验例子
+
+### Package spring.actuator
+Spring Actuator 例子
 
 ### Package string
 String相关实验

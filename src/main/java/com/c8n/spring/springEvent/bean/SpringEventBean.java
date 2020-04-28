@@ -1,4 +1,4 @@
-package com.c8n.springEvent.bean;
+package com.c8n.spring.springEvent.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
