@@ -16,8 +16,16 @@ spring:
 server:
   port: 0
 
+# Apollo Configuration
+app:
+  id: capel
+apollo:
+  meta: http://127.0.0.1:8080
+  bootstrap:
+    enabled: true
+    eagerLoad:
+      enabled: true
+
+
 # 日志级别控制
 debug: false
-logging:
-  level:
-    com.newtouch.tpmp.jd.spec: DEBUG
