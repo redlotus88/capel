@@ -1,6 +1,7 @@
 package com.redlotus.security.config;
 
 import com.redlotus.security.common.CapelEnvironmentUtils;
+import com.redlotus.security.common.CapelWebRequestPath;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -53,8 +54,11 @@ public class CapelSecurityConfiguration extends WebSecurityConfigurerAdapter {
         // 权限配置
         http
                 .authorizeRequests()
+                // Permit All
                 .antMatchers(HttpMethod.GET, "/", "/swagger-resources/**", "/v2/api-docs/**").permitAll()
-                .antMatchers(HttpMethod.POST, "/login").permitAll()
+                .antMatchers(HttpMethod.POST, CapelWebRequestPath.SECURITY_LOGIN).permitAll()
+                .antMatchers(HttpMethod.PUT, CapelWebRequestPath.USER_REGISTER).permitAll()
+                // Need Authentication
                 .anyRequest().authenticated();
     }
 

@@ -4,3 +4,5 @@
 ### Package Security
 红莲系统的后台安全策略配置，基于Spring Security。
 
+### Package User
+用户管理相关
