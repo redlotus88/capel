@@ -43,13 +43,14 @@ public class CapelSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         ApplicationContext applicationContext = getApplicationContext();
-        if (CapelEnvironmentUtils.isDev(applicationContext.getEnvironment().getActiveProfiles())) {
+        if (CapelEnvironmentUtils.isDevOrDefault(applicationContext.getEnvironment().getActiveProfiles())) {
             log.info("当前环境为开发环境， 禁用CSRF保护");
             http.csrf().disable();
         } else {
             log.info("当前环境非开发环境，CSRF保护启用。");
         }
 
+        // 权限配置
         http
                 .authorizeRequests()
                 .antMatchers(HttpMethod.GET, "/", "/swagger-resources/**", "/v2/api-docs/**").permitAll()
