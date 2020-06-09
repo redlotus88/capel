@@ -56,8 +56,8 @@ public class CapelSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 // Permit All
                 .antMatchers(HttpMethod.GET, "/", "/swagger-resources/**", "/v2/api-docs/**").permitAll()
-                .antMatchers(HttpMethod.POST, CapelWebRequestPath.SECURITY_LOGIN).permitAll()
-                .antMatchers(HttpMethod.PUT, CapelWebRequestPath.USER_REGISTER).permitAll()
+                .antMatchers(HttpMethod.POST, CapelWebRequestPath.LOGIN).permitAll()
+                .antMatchers(HttpMethod.PUT, CapelWebRequestPath.REGISTER).permitAll()
                 // Need Authentication
                 .anyRequest().authenticated();
     }

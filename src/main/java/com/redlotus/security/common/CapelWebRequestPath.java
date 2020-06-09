@@ -8,10 +8,10 @@ public final class CapelWebRequestPath {
     /*
      * User Module
      */
-    public static final String USER_REGISTER = "/register";
+    public static final String REGISTER = "/register";
 
     /*
-     * Security
+     * Security Module
      */
-    public static final String SECURITY_LOGIN = "/login";
+    public static final String LOGIN = "/login";
 }

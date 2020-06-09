@@ -27,7 +27,7 @@ public class CapelUserController {
      * 用户注册
      * @return Boolean
      */
-    @PutMapping(CapelWebRequestPath.USER_REGISTER)
+    @PutMapping(CapelWebRequestPath.REGISTER)
     ResponseEntity<Boolean> register() {
         capelUserService.save(CapelUserBuilder.of("test", "test").build());
         return ResponseEntity.of(Optional.of(Boolean.TRUE));
