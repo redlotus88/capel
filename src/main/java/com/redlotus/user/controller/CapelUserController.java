@@ -3,9 +3,11 @@ package com.redlotus.user.controller;
 import com.redlotus.security.common.CapelWebRequestPath;
 import com.redlotus.user.builder.CapelUserBuilder;
 import com.redlotus.user.service.CapelUserService;
+import com.redlotus.user.vo.CapelUserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
@@ -28,8 +30,8 @@ public class CapelUserController {
      * @return Boolean
      */
     @PutMapping(CapelWebRequestPath.REGISTER)
-    ResponseEntity<Boolean> register() {
-        capelUserService.save(CapelUserBuilder.of("test", "test").build());
+    ResponseEntity<Boolean> register(@RequestBody CapelUserVO capelUserVO) {
+        capelUserService.save(CapelUserBuilder.of(capelUserVO.getUsername(), capelUserVO.getPassword()).build());
         return ResponseEntity.of(Optional.of(Boolean.TRUE));
     }
 }
