@@ -27,6 +27,14 @@ public class CapelUserControllerTestAbstract extends AbstractCapelWebTest {
         vo.setPassword("123456");
         ObjectMapper mapper = new ObjectMapper();
 
+        // 空参数报错
+        mockMvc.perform(
+                    put("/register")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(""))
+                .andExpect(status().is4xxClientError());
+
+        // Success
         mockMvc.perform(put("/register")
                     .contentType(MediaType.APPLICATION_JSON)
                     .content(mapper.writeValueAsString(vo)))

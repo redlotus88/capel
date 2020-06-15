@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
 import java.util.Optional;
 
 /**
@@ -30,7 +31,7 @@ public class CapelUserController {
      * @return Boolean
      */
     @PutMapping(CapelWebRequestPath.REGISTER)
-    ResponseEntity<Boolean> register(@RequestBody CapelUserVO capelUserVO) {
+    ResponseEntity<Boolean> register(@RequestBody @Valid CapelUserVO capelUserVO) {
         capelUserService.save(CapelUserBuilder.of(capelUserVO.getUsername(), capelUserVO.getPassword()).build());
         return ResponseEntity.of(Optional.of(Boolean.TRUE));
     }

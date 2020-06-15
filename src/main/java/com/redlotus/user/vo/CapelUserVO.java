@@ -3,8 +3,9 @@ package com.redlotus.user.vo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.Length;
 
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 
 /**
@@ -17,9 +18,11 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class CapelUserVO implements Serializable {
 
-    @NotNull(message = "用户名不能为空")
+    @NotEmpty(message = "用户名不能为空")
+    @Length(max = 16)
     private String username;
 
-    @NotNull(message = "密码不能为空")
+    @NotEmpty(message = "密码不能为空")
+    @Length(max = 32)
     private String password;
 }
