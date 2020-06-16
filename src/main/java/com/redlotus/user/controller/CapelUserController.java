@@ -32,7 +32,7 @@ public class CapelUserController {
      */
     @PutMapping(CapelWebRequestPath.REGISTER)
     ResponseEntity<Boolean> register(@RequestBody @Valid CapelUserVO capelUserVO) {
-        capelUserService.save(CapelUserBuilder.of(capelUserVO.getUsername(), capelUserVO.getPassword()).build());
+        capelUserService.save(CapelUserBuilder.of(capelUserVO).build());
         return ResponseEntity.of(Optional.of(Boolean.TRUE));
     }
 }

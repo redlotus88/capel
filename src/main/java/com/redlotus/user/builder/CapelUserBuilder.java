@@ -1,8 +1,7 @@
 package com.redlotus.user.builder;
 
 import com.redlotus.user.model.CapelUser;
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import com.redlotus.user.vo.CapelUserVO;
 import lombok.NoArgsConstructor;
 
 /**
@@ -31,6 +30,10 @@ public class CapelUserBuilder {
     public CapelUserBuilder password(String password) {
         capelUser.setPassword(password);
         return this;
+    }
+
+    public static CapelUserBuilder of(CapelUserVO vo) {
+        return CapelUserBuilder.of(vo.getUsername(), vo.getPassword());
     }
 
     public static CapelUserBuilder of(String username, String password) {
