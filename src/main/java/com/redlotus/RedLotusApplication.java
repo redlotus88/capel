@@ -11,7 +11,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 @EnableApolloConfig
 public class RedLotusApplication {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         new SpringApplicationBuilder()
                 .sources(RedLotusApplication.class)
                 .run(args);
