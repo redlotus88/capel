@@ -4,5 +4,7 @@
 ### Package Security
 红莲系统的后台安全策略配置，基于Spring Security。
 
+com.redlotus.security.common.CapelWebRequestPath 配置Web请求路径的常量
+
 ### Package User
 用户管理相关
