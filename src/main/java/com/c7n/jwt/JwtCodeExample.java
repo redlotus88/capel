@@ -77,7 +77,7 @@ public class JwtCodeExample {
 
         // Now you can do something with the JWT. Like send it to some other party
         // over the clouds and through the interwebs.
-        log.info("JWT: " + jwt);
+        log.info("Generate JWT: " + jwt);
         return jwt;
     }
 
