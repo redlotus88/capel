@@ -1,4 +1,4 @@
-package com.c7n.jwt;
+package com.c7n.jwt.jose4j;
 
 public class JwtStarter {
 

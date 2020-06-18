@@ -1,4 +1,4 @@
-package com.c7n.jwt;
+package com.c7n.jwt.jose4j;
 
 import org.jose4j.jwa.AlgorithmConstraints;
 import org.jose4j.jwe.ContentEncryptionAlgorithmIdentifiers;

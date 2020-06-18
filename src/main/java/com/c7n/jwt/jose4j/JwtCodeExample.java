@@ -1,4 +1,4 @@
-package com.c7n.jwt;
+package com.c7n.jwt.jose4j;
 
 import lombok.extern.log4j.Log4j2;
 import org.jose4j.jwa.AlgorithmConstraints;
