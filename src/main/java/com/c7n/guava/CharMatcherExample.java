@@ -5,6 +5,9 @@ import com.google.common.base.CharMatcher;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
+/**
+ * 字符匹配相关操作。 可以用以移除(替换)字符串中符合规则的字符
+ */
 public class CharMatcherExample {
 
     public static void main(String[] args) {
