@@ -1,7 +1,6 @@
 package com.c7n.graph;
 
 import lombok.extern.log4j.Log4j2;
-import net.coobird.thumbnailator.Thumbnails;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -11,6 +10,7 @@ import java.awt.image.FilteredImageSource;
 import java.awt.image.ImageFilter;
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 
 /**
  * 根据一张给定的图片，生成该图片的九宫格图片。
@@ -90,8 +90,11 @@ public class JiuGongGeGenerator {
                     g.drawImage(img, 0, 0, null); // 绘制缩小后的图
                     g.dispose();
                     // 输出为文件
+                    long now = new Date().getTime();
+
+
                     ImageIO.write(tag, "JPEG", new File(descDir
-                            + "_r" + i + "_c" + j + ".jpg"));
+                            + now + "_r" + i + "_c" + j + ".jpg"));
                 }
             }
         }
