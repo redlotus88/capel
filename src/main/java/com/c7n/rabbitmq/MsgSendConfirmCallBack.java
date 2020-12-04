@@ -1,4 +1,4 @@
-package com.c8n.rabbitmq;
+package com.c7n.rabbitmq;
 
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
