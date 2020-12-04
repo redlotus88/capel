@@ -1,6 +1,6 @@
 package com.c7n.rabbitmq.config;
 
-import com.c8n.rabbitmq.MsgSendConfirmCallBack;
+import com.c7n.rabbitmq.MsgSendConfirmCallBack;
 import org.springframework.amqp.core.AcknowledgeMode;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
