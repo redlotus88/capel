@@ -10,10 +10,13 @@ package com.c7n.string;
 public class FtpCommandStringGenerator {
 
     public static void main(String[] args) {
-        String templateXls = "rename MD05.CMP.20201031.%s.xls ../MD05.CMP.20201031.%s.xls";
-        String templateCtl = "rename MD05.CMP.20201031.%s.CTL.TMP ../MD05.CMP.20201031.%s.CTL";
+//        String templateXls = "rename MD05.CMP.20201031.%s.xls ../MD05.CMP.20201031.%s.xls";
+//        String templateCtl = "rename MD05.CMP.20201031.%s.CTL.TMP ../MD05.CMP.20201031.%s.CTL";
 
-        for (int i = 1; i <= 218; i++) {
+        String templateXls = "rename MD05.CMP.20201031.%s.x MD05.CMP.20201031.%s.xls";
+        String templateCtl = "rename MD05.CMP.20201031.%s.C MD05.CMP.20201031.%s.CTL";
+
+        for (int i = 30; i <= 50; i++) {
             System.out.println(String.format(templateXls, i, i));
             System.out.println(String.format(templateCtl, i, i));
         }
