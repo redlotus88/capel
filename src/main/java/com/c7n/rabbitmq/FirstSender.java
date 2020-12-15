@@ -1,6 +1,6 @@
-package com.c8n.rabbitmq;
+package com.c7n.rabbitmq;
 
-import com.c8n.rabbitmq.config.RabbitMqConfig;
+import com.c7n.rabbitmq.config.RabbitMqConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

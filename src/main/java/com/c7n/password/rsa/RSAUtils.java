@@ -1,4 +1,4 @@
-package com.c7n.rsa;
+package com.c7n.password.rsa;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.IOUtils;

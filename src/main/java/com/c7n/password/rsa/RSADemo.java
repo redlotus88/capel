@@ -1,4 +1,4 @@
-package com.c7n.rsa;
+package com.c7n.password.rsa;
 
 import java.security.*;
 
