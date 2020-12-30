@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:sqlite:./db/example.db
+    username:
+    password:
+    driver-class-name: org.sqlite.JDBC
+    jpa:
+      database: org.hibernate.dialect.SQLiteDialect
+      database-platform: org.hibernate.dialect.SQLiteDialect
+      show-sql: true
+      open-in-view: true
+      hibernate:
+        ddl-auto: create

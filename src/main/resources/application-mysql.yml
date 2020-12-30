@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    hikari:
+      maximum-pool-size: 30
+      max-lifetime: 1800000
+      minimum-idle: 5
+      idle-timeout: 180000
+      connection-timeout: 30000
+    url: jdbc:mysql://localhost:3306/capel?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      database: MySQL
+      database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+      show-sql: true
+      hibernate:
+        ddl-auto: update

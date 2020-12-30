@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: capel
+
+# 日志级别控制
+debug: false
+logging:
+  level:
+    com.c8n: INFO
+
+server:
+  port: 10000
+  servlet:
+    context-path: /capel
