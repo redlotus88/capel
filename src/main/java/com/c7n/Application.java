@@ -8,7 +8,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
  * Created by dragon on 2019/7/4.
  */
 @SpringBootApplication
-@EnableApolloConfig
+//@EnableApolloConfig
 public class Application {
 
     public static void main(String[] args) throws Exception {
